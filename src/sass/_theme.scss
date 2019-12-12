@@ -1,0 +1,13 @@
+@mixin theme($color) {
+  *:not(button):not(img) {
+    background-color: $color;
+  }
+}
+
+.dark {
+  @include theme($color-black);
+}
+
+.light {
+  @include theme($color-white);
+}
